@@ -1,4 +1,4 @@
-﻿Shader "Custom/VerFrag_Outline" {
+﻿Shader "Custom/VerFrag_Outline_NoZdepth" {
 	SubShader{
 
 		Tags{ "RenderType" = "Opaque"

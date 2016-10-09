@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 4811244e1907e8c41992678665d42546
-timeCreated: 1475052115
-licenseType: Pro
+guid: 11e109a86caab7247856489934e1ec39
+timeCreated: 1476024603
+licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -9,7 +9,8 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: CosineValues
+    4300000: Suzanne
+    4300002: SuzanneFlipped
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -55,7 +56,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     human: []
@@ -70,7 +71,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
