@@ -1,22 +1,20 @@
-﻿Shader "Custom/Grab shader"
+﻿Shader "Custom/GrabShader"
 {
-	SubShader{
-	Tags {
-	"Queue" = "Transparent"
-	"RenderType" = "Opaque"
-		"IgnoreProjector" = "True"
-	}
-		ZWrite On Lighting Off Cull Off Fog {Mode Off} Blend One Zero
+	SubShader
+	{
+		Tags{ "Queue" = "Transparent" "IgnoreProjector" = "True" "RenderType" = "Opaque" }
+		ZWrite On Lighting Off Cull Off Fog{ Mode Off } Blend One Zero
 
-		GrabPass {"_GrabTexture"}
+		GrabPass{ "_GrabTexture" }
 
-		Pass {
-	CGPROGRAM
-	#pragma vertex vert 
-#pragma fragment frag 
+		Pass
+	{
+		CGPROGRAM
+#pragma vertex vert
+#pragma fragment frag
 #include "UnityCG.cginc"
 
-	sampler2D _GrabTexture;
+		sampler2D _GrabTexture;
 
 	struct vin_vct
 	{
@@ -46,7 +44,6 @@
 	}
 
 		ENDCG
-
 	}
 	}
 }
