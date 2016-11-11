@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 3D_print
-  m_Shader: {fileID: 4800000, guid: c99eec5f2a6eb6041a830125858ac3d8, type: 3}
+  m_Name: Fragment_Discard
+  m_Shader: {fileID: 4800000, guid: fd1ccfc1ebfab0f42b04e442753e9f0b, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -74,9 +74,6 @@ Material:
         name: _BumpScale
       second: 1
     - first:
-        name: _ConstructY
-      second: 1.55
-    - first:
         name: _Cutoff
       second: 0.5
     - first:
@@ -90,7 +87,7 @@ Material:
       second: 1
     - first:
         name: _Glossiness
-      second: 0.57
+      second: 0.5
     - first:
         name: _GlossyReflections
       second: 1
@@ -124,9 +121,6 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.7205882, g: 0.06887974, b: 0.4329374, a: 1}
-    - first:
-        name: _ConstructColor
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor

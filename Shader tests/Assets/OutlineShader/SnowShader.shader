@@ -1,6 +1,6 @@
 ﻿// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
 
-Shader "Example/SnowShader" {
+Shader "Custom/SnowShader" {
 	Properties{
 		_MainColor("Main Color", Color) = (1.0,1.0,1.0,1.0)
 		_MainTex("Base (RGB)", 2D) = "white" {}
