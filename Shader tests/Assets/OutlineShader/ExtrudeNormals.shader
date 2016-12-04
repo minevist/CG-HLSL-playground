@@ -1,6 +1,6 @@
 ﻿Shader "Custom/ExtrudeNormals"{
 	Properties{
-		_Amount ("Amount", Range (-0.1,0.1)) = 0
+		_Amount ("Amount", Range (-1,1)) = 0
 		_Tint ("Tint", Color ) = (1,1,1,1)
 	}
 		SubShader{

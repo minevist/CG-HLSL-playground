@@ -13,6 +13,9 @@
 		float4 _Tint;
 
 	float4 vert (float4 pozicija: POSITION) : SV_POSITION {
+		float4 par1 ;
+	par1[1] = 0;
+	pozicija[1] = par1[1]+1;
 	return mul (UNITY_MATRIX_MVP, pozicija);
 	}
 

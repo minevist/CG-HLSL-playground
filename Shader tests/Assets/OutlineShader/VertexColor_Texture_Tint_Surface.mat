@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: BasicShader
-  m_Shader: {fileID: 4800000, guid: d3f1abcf7d221dd489d4ec2c4bed9175, type: 3}
+  m_Name: VertexColor_Texture_Tint_Surface
+  m_Shader: {fileID: 4800000, guid: 3dc7e7fa16dc3b74e8b2f07b5ba82a6a, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -125,6 +125,3 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
-    - first:
-        name: _Tint
-      second: {r: 1, g: 1, b: 1, a: 1}

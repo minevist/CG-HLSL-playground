@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Snijeg
+  m_Name: SnowShader
   m_Shader: {fileID: 4800000, guid: fa6b8436fd2be5744b7d2628adfe277a, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
