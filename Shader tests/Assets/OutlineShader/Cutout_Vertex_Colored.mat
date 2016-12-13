@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: TexturedExtrudeNormal
-  m_Shader: {fileID: 4800000, guid: 58de2cc9ffac02444bac238b2ebd0d47, type: 3}
+  m_Name: Cutout_Vertex_Colored
+  m_Shader: {fileID: 4800000, guid: ede8e47757181f54b9c695bc8bf4d682, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -48,7 +48,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 57e574368c9a1654e99cefd5c1466a94, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -71,11 +71,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
-        name: _Amount
-      second: 0.059
-    - first:
         name: _BumpScale
       second: 1
+    - first:
+        name: _ClipOffset
+      second: 0.03
     - first:
         name: _Cutoff
       second: 0.5
@@ -129,5 +129,11 @@ Material:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
-        name: _Tint
-      second: {r: 1, g: 0.51724136, b: 0, a: 0}
+        name: _SectionColor
+      second: {r: 1, g: 0, b: 0, a: 1}
+    - first:
+        name: _SectionPlane
+      second: {r: 0, g: 0, b: 0.1, a: 0}
+    - first:
+        name: _SectionPoint
+      second: {r: 0, g: 0, b: 0, a: 0}

@@ -1,6 +1,6 @@
-﻿Shader "Custom/TexturedExtrudeNormal" {
+﻿Shader "Custom/TintedExtrudeNormal" {
 Properties{
-	_MainTex("Texture", 2D) = "white" {}
+	
 _Amount("Extrusion Amount", Range(-0.1,0.1)) = 0
 _Tint("Tint", Color) = (1, 1, 1, 1)
 }
