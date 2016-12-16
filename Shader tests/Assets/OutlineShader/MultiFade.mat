@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 3D_print
-  m_Shader: {fileID: 4800000, guid: 1cb7f86687eff674698e669615a4bdee, type: 3}
+  m_Name: MultiFade
+  m_Shader: {fileID: 4800000, guid: a193493c5bffc5a428639f14e2472619, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -92,6 +92,9 @@ Material:
         name: _GlossyReflections
       second: 1
     - first:
+        name: _HeightY
+      second: 6.9
+    - first:
         name: _Metallic
       second: 0
     - first:
@@ -125,3 +128,6 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _Tint
+      second: {r: 1, g: 0, b: 0, a: 0.278}
