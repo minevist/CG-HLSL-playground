@@ -26,6 +26,7 @@ public class Proc_Cube : MonoBehaviour
         mesh.vertices = newVertices;
 
         mesh.triangles = newTriangles;
+        mesh.RecalculateNormals();
 
         GetComponent<Renderer>().material = material;
     }
