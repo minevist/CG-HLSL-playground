@@ -25,15 +25,19 @@ private var sections = new Array();
 
 function LateUpdate () {
     var position = transform.position;
-	var now = Time.time;
+    var now = Time.time;
+    var myHeight = Vector3 (0,1,0);
 	
 	// Remove old sections
 	//while (sections.length > 0 && now > sections[sections.length - 1].time + time) {
 	//	sections.Pop();
 	//}
-
-	// Add a new trail section to beginning of array
-	if (sections.length == 0 || (sections[0].point - position).sqrMagnitude > minDistance * minDistance)
+    Debug.Log(position);	
+    Debug.Log(myHeight);
+    
+    // Add a new trail section to beginning of array
+    if (sections.length == 0 || (sections[0].point - position).sqrMagnitude > minDistance * minDistance)
+    //if (Input.GetKeyUp ("space"))
 	{
 		var section = ExtrudedTrailSection ();
 		section.point = position;
