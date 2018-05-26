@@ -1,4 +1,6 @@
-﻿Shader "Custom/TexturedTinted" { 
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/TexturedTinted" { 
 
 Properties {
 
@@ -33,7 +35,7 @@ float2 uv : texcoord0;
 Interpolators vrtxprgrm (VertexData v) {
 Interpolators i ;
 // i.localPosition = v.position.xyz; 
-i.position = mul (UNITY_MATRIX_MVP, v.position );
+i.position = UnityObjectToClipPos (v.position );
 i.uv = TRANSFORM_TEX (v.uv , _MainTex);
 return i;
 }

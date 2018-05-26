@@ -1,4 +1,6 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
 Shader "Custom/Cutout_Vertex_Colored" {
 	Properties{
@@ -39,7 +41,7 @@ Shader "Custom/Cutout_Vertex_Colored" {
 
 	vertexOutput vert(appdata_base input) {
 		vertexOutput output;
-		output.pos = mul(UNITY_MATRIX_MVP, input.vertex);
+		output.pos = UnityObjectToClipPos(input.vertex);
 		output.wpos = mul(unity_ObjectToWorld, input.vertex).xyz;
 		return output;
 	}

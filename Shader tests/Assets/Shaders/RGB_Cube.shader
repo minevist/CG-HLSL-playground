@@ -1,4 +1,6 @@
-﻿Shader "Custom/RGB_Cube" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/RGB_Cube" {
 	SubShader 
 	{
 	Pass 
@@ -17,7 +19,7 @@
 	{
 		vertexOutput output;
 
-		output.pos = mul(UNITY_MATRIX_MVP, vertexPos);
+		output.pos = UnityObjectToClipPos(vertexPos);
 		output.col = vertexPos + float4 (0.5, 0.5, 0.5, 0.0);
 		return output;
 	}

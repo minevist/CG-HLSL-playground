@@ -1,4 +1,6 @@
-﻿Shader "Custom/VerFrag_Outline" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/VerFrag_Outline" {
 	SubShader{
 
 		Tags{ "RenderType" = "Opaque"
@@ -19,7 +21,7 @@ Pass {
 
 	vertOutput vert(vertInput input) {
 		vertOutput o;
-		o.pos = mul(UNITY_MATRIX_MVP, input.pos);
+		o.pos = UnityObjectToClipPos(input.pos);
 		return o;
 	}
 

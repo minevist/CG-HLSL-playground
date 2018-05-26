@@ -1,4 +1,6 @@
-﻿Shader "Custom/Mesher" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/Mesher" {
 	SubShader{
 		Pass{
 		Cull Off
@@ -19,7 +21,7 @@
 
 	vertexOutput vert(vertexInput input) {
 		vertexOutput output;
-		output.pos = mul(UNITY_MATRIX_MVP, input.vertex);
+		output.pos = UnityObjectToClipPos(input.vertex);
 		return output;
 	}
 

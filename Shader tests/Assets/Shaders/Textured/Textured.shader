@@ -1,4 +1,6 @@
-﻿Shader "Custom/Textured"{
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/Textured"{
 
 
 Properties {
@@ -29,7 +31,7 @@ float4 position : POSITION; float2 uv: TEXCOORD0;
 
 Interpolators vrtx (VertexData v) {
 Interpolators i;
-i.position = mul (UNITY_MATRIX_MVP, v.position);
+i.position = UnityObjectToClipPos (v.position);
 i.uv = v.uv;
 return i;
 }

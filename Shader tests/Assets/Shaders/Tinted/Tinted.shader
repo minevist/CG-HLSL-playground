@@ -1,4 +1,6 @@
-﻿Shader "Custom/Tinted" { 
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/Tinted" { 
 Properties {
 _Tint ("Tint", Color) = (1,1,1,1)
 }
@@ -22,7 +24,7 @@ struct Interpolators
 
 Interpolators vrtx (VertexData v) {
 Interpolators i ;
-i.position = mul (UNITY_MATRIX_MVP, v.position );
+i.position = UnityObjectToClipPos (v.position );
 
 return i;
 }
